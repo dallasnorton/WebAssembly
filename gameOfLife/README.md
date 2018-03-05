@@ -38,5 +38,5 @@ We compile the file with
 $ emcc counter.c -s WASM=1 -s SIDE_MODULE=1 -o counter.wasm
 ```
 
-You might not see any result depending on what editor you are using.
+You might not see any result depending on what editor you are using. it will look like:
 ![Output](counterOutput.png)
