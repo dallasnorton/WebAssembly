@@ -10,6 +10,7 @@ $ git clone https://github.com/juj/emsdk.git
 $ cd emsdk
 $ ./emsdk install latest
 $ ./emsdk activate latest
+$ ./emsdk activate latest
 ```
 
 To enter an Emscripten compiler environment:
@@ -17,28 +18,25 @@ To enter an Emscripten compiler environment:
 $ source ./emsdk_env.sh --build=Release
 ```
 
-Now we create a C file in a hello directory,
-```
-$ mkdir hello
-$ cd hello
-```
+Same as Hello World Example ^^^
+---
 
-hello.c
+Make counter.c file
+
 ```
-#include <stdio.h>
-int main(int argc, char ** argv) {
-printf("Hello, world!\n");
+int counter = 100;
+
+int count() {  
+    counter += 1;
+    return counter;
 }
 ```
 
-We have to pass the linker flag -s WASM=1 to emcc (otherwise by default emcc will emit asm.js).
+We compile the file with 
 
 ```
-$ emcc hello.c -s WASM=1 -o hello.html
+$ emcc counter.c -s WASM=1 -s SIDE_MODULE=1 -o counter.wasm
 ```
 
-To view compiled files we can run a simple HTTP server
-
-```
-$ emrun --no_browser --port 8080 .
-```
+You might not see any result depending on what editor you are using.
+![Output](counterOutput.png)
