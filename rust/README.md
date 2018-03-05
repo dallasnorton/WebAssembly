@@ -135,3 +135,7 @@ The character encoding of the HTML document was not declared. The document will 
 South
 false
 ```
+
+
+---
+For more information visit [The Path to Rust on the Web](https://hoverbear.org/2017/04/06/the-path-to-rust-on-the-web/)

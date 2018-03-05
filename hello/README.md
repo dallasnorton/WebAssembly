@@ -42,3 +42,6 @@ To view compiled files we can run a simple HTTP server
 ```
 $ emrun --no_browser --port 8080 .
 ```
+
+---
+For more information visit [WebAssembly.org](http://webassembly.org/getting-started/developers-guide/)
