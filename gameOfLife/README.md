@@ -1,4 +1,4 @@
-# WebAssembly
+# Game Of Life
 
 Prerequisites :
 CMake: `brew install cmake`

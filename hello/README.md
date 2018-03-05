@@ -1,4 +1,4 @@
-# WebAssembly
+# Hello World
 
 Prerequisites :
 CMake: `brew install cmake`
