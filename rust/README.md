@@ -1,7 +1,7 @@
 # Rust
 
 Prerequisites :
-XCode
+XCode,
 Rust
 ```
 cd ~/emsdk-portable
@@ -49,7 +49,7 @@ cargo init wasm-demo --bin
 rustup override set nightly
 ```
 
-#First Experiment
+# First Experiment
 
 Insert into `src/main.rs`
 
